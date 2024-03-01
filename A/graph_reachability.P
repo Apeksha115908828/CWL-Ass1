@@ -1,0 +1,12 @@
+%Graph reachability
+
+reach(X) :- source(S),  reach(S, [S], X).
+
+reach(X, Visited, X) :- member(X, Visited).
+reach(X, Visited, X) :- edge(X, _), \+ member(X, Visited).
+reach(S, Visited, X) :- edge(S, Y), \+ member(Y, Visited), reach(Y, [Y|Visited], X).
+
+member(X, [X|_]).
+member(X, [_|T]) :- member(X, T).
+
+printReach :- setof(X, reach(X), Reachable), print(Reachable).

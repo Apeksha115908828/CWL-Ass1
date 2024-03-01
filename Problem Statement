@@ -1,0 +1,111 @@
+Computation and analysis on complex graphs and relationships are highly nontrivial, to first express the problems clearly and correctly, and then to solve them automatically and efficiently.  Logic languages supporting rules and constraints come to the rescue!:)
+
+We will practice programming core example problems using logic languages, trying to understand different ways of programming, in terms of ease of understanding, as well as efficiency of execution.
+
+You can find provided files at https://drive.google.com/drive/folders/19jXbj-9PNQzS8Jw8wCpp92QwUIU1tdEl
+
+
+A. Implement the following problems in XSB.  You need to install XSB (from http://xsb.sourceforge.net) but you can experiment with basic rules and queries using the online environment of SWI Prolog (at https://swish.swi-prolog.org).
+
+
+1. Append.  You are given a definition of predicate append(Xs,Ys,Zs) meaning that the concatenation of Xs and Ys equals Zs.  You are asked to use it to define two predicates.
+
+a. Predicate suffix/2, such that querying suffix with two lists Xs and Ys will give false if Xs does not equal a prefix of Ys, and otherwise will print out the suffix of Ys after the prefix that equals Xs, followed by true.  For example, querying suffix([1,2], [1,2,3,4]) will print out [3, 4] followed by true.
+
+b. Predicate cut/1, such that querying cut with a list Xs will print out the list of all cuts of Xs followed by true.  For example, querying cut([1,2,3]) will print out the following followed by true.
+[], [1, 2, 3]
+[1], [2, 3]
+[1, 2], [3]
+[1, 2, 3], []
+
+
+2. Graph reachability.  Implement the graph reachability problem (take predicates source/1 and edge/2, and define predicate reach/1 to be true for all vertices reachable from the sources following the edges), including input and output functionalities (output all reachable vertices).
+
+Your task is to try different ways of writing the rules, run test and analysis, and understand and describe how termination and efficiency are affected by the order of rules, the order of hypotheses, and the use of tabling.
+
+For correctness testing and performance analysis, you need to run on some specific test cases for correctness, and run on a number of randomly generated input of different sizes for performance (report what kinds of inputs you generated, include size and number, and how you did timing, include what interval you are timing, e.g., from before loading in input to after writing output), plot the results, and conclude what kind of curves you are getting.
+
+
+3. Transitive closure and cycle detection.  Consider given edge/2 as in A.2.
+
+a. Define predicate path(a,b) to be true iff there is a sequence of edges leading from a to b.
+
+b. Define predicate cycle(a) to be true iff a is in a cycle.
+
+
+4. N-queens.  Implement the well-known n-queens problems, where n queens are to be placed on an n-by-n board so that no two queens are in the same row, or same column, or same diagonal.
+
+Your task also include timing the your program on different values of n, and for returning 1 solution vs all solutions.
+
+
+B. Implement A.2 (graph reachability) and A.4 (n-queens) in clingo.  You need to install clingo (from https://potassco.org/clingo) but you can experiment with basic rules and queries using the online environment of clingo (at https://potassco.org/clingo/run).
+
+
+C.  Implement what we call n-queens-plus in IDP, using its online environment (at http://idp.cs.kuleuven.be/idp).
+
+N-queen-plus.  Start with the n-queens problem. We added a distance constraint: any two queens must be at least k units apart, where a unit is one horizontal or vertical square distance.  For example, two queens at (3,6) and (4,2) is 5 units apart, because 4-3 is 1 unit, 6-2 is 4 units, and 1 unit + 4 units is 5 units.
+
+We implement this n-queens-plus problem by modifying existing implementation of the n-queens problem in IDP (at the url above) to add the distance constraint: (1) click "File" in the menu at the top and select the last entry "Problem Library", and (2) select "N-Queens Problem" in the list on the left.  You can click "Run" in the menu at the top to see the output displayed on the right.
+
+Your task is to try different ways of adding the distance constraint, run with different number of queens and different values of k, and determine, for 20 queens, the maximum value of k where the problem have solutions.
+
+
+D. Writing and running your program
+
+You may start with the provided files: reach.P for part A, nqueens.lp for part B, and nqueens.idp for part C (and a3extra.da for extra credits, describe below).  The last two contain n-queens program from the online environments for clingo and IDP, respectively.
+
+For Parts A and B problems 2 and 4, you may write the test and analysis code in any way/language that's easiest for you.  You may use functionalities in XSB and clingo, or a language like Python to run the command line with files for input/output.  XSB and clingo also has interfaces with Python.
+
+Reminder: Your README file must say what you used, as part of how to run and test your code.
+
+
+E. Things to think about
+
+1. Can I make my program clearer?
+
+2. What are the pros and cons of different languages for implementing the same problem?
+
+3. Which language allows me to write which programs in the clearest and easiest way?
+
+4. Which language and/or way of writing the programs gives the best performance?
+
+5. Why in the world do we use all of XSB, SWI Prolog, clingo, and IDP to program these problems?  How about creating a single language to allow all problems to be expressed in the clearest and easiest way and run most efficiently?
+
+
+F. Submission
+
+1. Prepare your submission by adding all your files (including your README.txt) to a zip file.
+
+2. Name your file exactly as "First_Last_ID_Ax.zip", where First is your first name, Last is your last name, ID is your Stony Brook student ID, and x is the homework number.
+
+3. Submit the single zip file in Google classroom, and add no other files or comments.
+
+
+------------
+Extra credit I (20%)
+
+In Parts A and B, run test and analysis for transitive closure in problem 3 too, comparing an additional dimension of 3 ways of writing the recursive rule.
+
+
+------------
+Extra credit II (10%)
+
+Do N-queens-plus for clingo too, using its online environment: (1) select "n-Queens" in the box for "Examples" at the top, and (2) select "enumerate all" in the box for "reasoning mode" below the program.  You can click "Run!" just below to see the output displayed below that.
+
+
+------------
+Extra credit III (30%)
+
+Do A.2 (reachability) and A.4 (n-queens) using IDP-Z3, a new implementation of IDP, that has a Python interface.  You need to install IDP-Z3 (from https://www.idp-z3.be).
+
+
+------------
+Extra credit IV (20%)
+
+Do A.2 (reachability) and Extra credit I (transitive closure) in Alda, an extension of Python with rules.  You need to install Alda (from https://github.com/DistAlgo/alda).
+
+
+------------
+Bug bounty
+
+If you find this assignment description to be buggy or ambiguous, please post about it.  Students finding errors or ambiguity will be rewarded with extra credit.

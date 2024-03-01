@@ -1,0 +1,7 @@
+edge(2, 4).
+edge(5, 1).
+edge(1, 4).
+edge(2, 3).
+edge(3, 5).
+edge(5, 2).
+source(2).

@@ -1,0 +1,13 @@
+range(M, N, [M|Ns]) :- M < N, M1 is M+1, range(M1,N,Ns).
+range(N, N, [N]).
+
+queens(N,Qs, K) :- range(1,N,Ns), queens(Ns,[],Qs, K).
+queens(UnplacedQs, SafeQs, Qs, K) :- select(Q, UnplacedQs, UnplacedQs1), \+ attack(Q,SafeQs, K), queens(UnplacedQs1, [Q|SafeQs], Qs, K).
+queens([], Qs, Qs, _) :- !.
+
+select(X, [X|Xs], Xs).
+select(X, [Y|Ys], [Y|Zs]) :- select(X, Ys, Zs).
+
+attack(X,Xs, K) :- attack(X,1,Xs, K).
+attack(X, N, [Y|_], K) :- X is Y+N; X is Y-N; K > N + abs(Y - X).
+attack(X, N, [_|Ys], K) :- N1 is N+1, attack(X,N1,Ys, K).

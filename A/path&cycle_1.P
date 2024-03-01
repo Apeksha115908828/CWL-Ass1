@@ -1,0 +1,6 @@
+%A.3.a:
+path(X, Y) :- edge(X, Y).
+path(X, Y) :- edge(X, Z), path(Z, Y).
+
+%A.3.b:
+cycle(X) :- path(X, X), !.

@@ -1,0 +1,7 @@
+% path
+path(X, Y) :- edge(X, Y).
+path(X, Y) :- path(Z, Y), edge(X, Z).
+
+%cycle
+cycle(X) :- path(X, X), !.
+

@@ -1,0 +1,9 @@
+%Graph reachability, using tables
+
+reach(X) :- source(X).
+reach(Y) :- reach(X), edge(X,Y).
+
+:- table reach/1.
+
+printReach :- reach(X), write(X), write(' '), fail.
+printReach.

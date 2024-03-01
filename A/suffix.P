@@ -1,0 +1,19 @@
+append([], Ys, Ys).
+append([X|Xs],Ys,[X|Zs]) :- append(Xs,Ys,Zs).
+
+append_1([], Ys, Ys).
+append_1(List, Element, Result) :-
+    append(List, [Element], Result).
+
+suffix(Xs, [Y|Ys]) :- 
+    append_1([], Y, Y1), 
+    suffix(Xs, [Y1], Ys).
+
+suffix(Xs, Xs, Ys) :- print(Ys), !.
+suffix(Xs, Y1, [Y|Ys]) :- 
+    append_1(Y1, Y, Y2),
+    suffix(Xs, Y2, Ys).
+
+cut([], X) :- print([X]), print([]).
+cut([X|Xs], [Y2|Y]) :- print([Y2|Y]), print([X|Xs]), append_1([Y2|Y], X, Y1), cut(Xs, Y1).
+cut([X|Xs]) :- print([]), print([X|Xs]), append_1([], X, Y), cut(Xs, Y).

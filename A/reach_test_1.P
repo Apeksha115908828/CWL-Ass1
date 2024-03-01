@@ -1,0 +1,33 @@
+edge(3, 1).
+edge(3, 7).
+edge(3, 13).
+edge(8, 3).
+edge(9, 14).
+edge(8, 15).
+edge(16, 4).
+edge(16, 1).
+edge(16, 7).
+edge(15, 11).
+edge(1, 15).
+edge(12, 6).
+edge(4, 11).
+edge(9, 4).
+edge(9, 16).
+edge(10, 5).
+edge(2, 1).
+edge(10, 8).
+edge(13, 1).
+edge(15, 4).
+edge(16, 3).
+edge(15, 13).
+edge(2, 13).
+edge(3, 11).
+edge(5, 11).
+edge(8, 1).
+edge(9, 6).
+edge(9, 15).
+edge(2, 9).
+edge(16, 8).
+source(3).
+source(1).
+source(11).

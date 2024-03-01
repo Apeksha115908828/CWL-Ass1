@@ -1,0 +1,297 @@
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(1,3) q(3,4) q(2,1) q(4,2)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(1,4) q(3,5) q(2,2) q(4,3) q(5,1)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(3,6) q(2,4) q(1,2) q(6,5) q(5,3) q(4,1)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(2,7) q(1,5) q(4,6) q(3,2) q(5,3) q(7,4) q(6,1)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(2,7) q(5,8) q(4,6) q(1,2) q(3,3) q(6,5) q(8,4) q(7,1)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(1,7) q(4,8) q(7,9) q(3,4) q(5,5) q(2,1) q(8,6) q(6,3) q(9,2)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.002s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.002s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(1,3) q(3,4) q(2,1) q(4,2)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(1,4) q(3,5) q(2,2) q(4,3) q(5,1)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(3,6) q(2,4) q(1,2) q(6,5) q(5,3) q(4,1)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(2,7) q(1,5) q(4,6) q(3,2) q(5,3) q(7,4) q(6,1)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(2,7) q(5,8) q(4,6) q(1,2) q(3,3) q(6,5) q(8,4) q(7,1)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(1,7) q(4,8) q(7,9) q(3,4) q(5,5) q(2,1) q(8,6) q(6,3) q(9,2)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.002s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.002s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(1,2) q(2,4) q(3,1) q(4,3)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(2,2) q(1,5) q(3,4) q(4,1) q(5,3)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(1,2) q(2,4) q(3,6) q(4,1) q(5,3) q(6,5)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(1,5) q(2,7) q(3,2) q(4,6) q(5,3) q(6,1) q(7,4)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(1,2) q(2,7) q(3,3) q(4,6) q(5,8) q(6,5) q(7,1) q(8,4)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+Answer: 1
+q(1,2) q(2,6) q(3,9) q(4,3) q(5,5) q(6,8) q(7,4) q(8,1) q(9,7)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.002s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.002s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 0.002s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.002s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 0.002s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.002s
+clingo version 5.6.2
+Reading from nqueens_plus_test.lp ...
+Solving...
+UNSATISFIABLE
+
+Models       : 0
+Calls        : 1
+Time         : 0.002s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.002s
