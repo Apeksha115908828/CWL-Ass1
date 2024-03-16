@@ -25,7 +25,6 @@ To Execute:
 3. the output can be found in output_suffix.P.txt
 4. the graph for number of nodes against time taken to execute can be found in file suffix.png
 
-
 2.
 The file graph_reachability.P and reach.P contains the code for printing all the vertices that are reachable from the source. The testcase generation code is present in generateTestcases.py and testcaseGenerator.py files.
 These will generate random testcases for different value of number of nodes, number of edges and number of sources defined in generateTestcases.py file, some special testcases are present in reach_t5 for cycle, reach_t6 for empty where no connection from source to any nodes, and reach_t7 for disconnected graphs.
